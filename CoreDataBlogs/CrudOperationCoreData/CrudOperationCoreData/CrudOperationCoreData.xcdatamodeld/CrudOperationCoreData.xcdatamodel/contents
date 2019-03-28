@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Passport" representedClassName="Passport" syncable="YES">
+        <attribute name="expiryDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ofUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="passport" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Task" representedClassName="Task" syncable="YES">
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ofUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="taks" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="secondName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="passport" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Passport" inverseName="ofUser" inverseEntity="Passport" syncable="YES"/>
+        <relationship name="taks" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Task" inverseName="ofUser" inverseEntity="Task" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Passport" positionX="1296" positionY="-5265" width="128" height="90"/>
+        <element name="Task" positionX="1285.046875" positionY="-5307.71875" width="128" height="105"/>
+        <element name="User" positionX="1287" positionY="-5283" width="128" height="120"/>
+    </elements>
+</model>

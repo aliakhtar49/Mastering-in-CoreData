@@ -1,0 +1,396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A289ECA2249140800C37966 /* googleplaystore.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3A289EC92249140800C37966 /* googleplaystore.csv */; };
+		3A289ECD2249379600C37966 /* GooglePlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A289ECC2249379600C37966 /* GooglePlayListViewController.swift */; };
+		3A8FAFD72248E27E002BCB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8FAFD62248E27E002BCB65 /* AppDelegate.swift */; };
+		3A8FAFD92248E27E002BCB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8FAFD82248E27E002BCB65 /* ViewController.swift */; };
+		3A8FAFDC2248E27E002BCB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8FAFDA2248E27E002BCB65 /* Main.storyboard */; };
+		3A8FAFDF2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A8FAFDD2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodeld */; };
+		3A8FAFE12248E282002BCB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8FAFE02248E282002BCB65 /* Assets.xcassets */; };
+		3A8FAFE42248E282002BCB65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8FAFE22248E282002BCB65 /* LaunchScreen.storyboard */; };
+		3A8FAFF12248ED54002BCB65 /* GooglePlay+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8FAFEF2248ED54002BCB65 /* GooglePlay+CoreDataClass.swift */; };
+		3A8FAFF22248ED54002BCB65 /* GooglePlay+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8FAFF02248ED54002BCB65 /* GooglePlay+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A289EC92249140800C37966 /* googleplaystore.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = googleplaystore.csv; sourceTree = "<group>"; wrapsLines = 1; };
+		3A289ECC2249379600C37966 /* GooglePlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlayListViewController.swift; sourceTree = "<group>"; };
+		3A8FAFD32248E27E002BCB65 /* GooglePlayViewerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlayViewerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8FAFD62248E27E002BCB65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A8FAFD82248E27E002BCB65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A8FAFDB2248E27E002BCB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A8FAFDE2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GooglePlayViewerApp.xcdatamodel; sourceTree = "<group>"; };
+		3A8FAFE02248E282002BCB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8FAFE32248E282002BCB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A8FAFE52248E282002BCB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8FAFEF2248ED54002BCB65 /* GooglePlay+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GooglePlay+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3A8FAFF02248ED54002BCB65 /* GooglePlay+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GooglePlay+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8FAFD02248E27E002BCB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A289ECB2249375E00C37966 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A289ECC2249379600C37966 /* GooglePlayListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A8FAFCA2248E27E002BCB65 = {
+			isa = PBXGroup;
+			children = (
+				3A8FAFD52248E27E002BCB65 /* GooglePlayViewerApp */,
+				3A8FAFD42248E27E002BCB65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8FAFD42248E27E002BCB65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8FAFD32248E27E002BCB65 /* GooglePlayViewerApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8FAFD52248E27E002BCB65 /* GooglePlayViewerApp */ = {
+			isa = PBXGroup;
+			children = (
+				3A289ECB2249375E00C37966 /* Controller */,
+				3A8FAFEE2248ED39002BCB65 /* Entitites */,
+				3A8FAFEB2248E28B002BCB65 /* Resources */,
+				3A8FAFD62248E27E002BCB65 /* AppDelegate.swift */,
+				3A8FAFD82248E27E002BCB65 /* ViewController.swift */,
+				3A8FAFDA2248E27E002BCB65 /* Main.storyboard */,
+				3A8FAFE02248E282002BCB65 /* Assets.xcassets */,
+				3A8FAFE22248E282002BCB65 /* LaunchScreen.storyboard */,
+				3A8FAFE52248E282002BCB65 /* Info.plist */,
+				3A8FAFDD2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodeld */,
+			);
+			path = GooglePlayViewerApp;
+			sourceTree = "<group>";
+		};
+		3A8FAFEB2248E28B002BCB65 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A289EC92249140800C37966 /* googleplaystore.csv */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A8FAFEE2248ED39002BCB65 /* Entitites */ = {
+			isa = PBXGroup;
+			children = (
+				3A8FAFEF2248ED54002BCB65 /* GooglePlay+CoreDataClass.swift */,
+				3A8FAFF02248ED54002BCB65 /* GooglePlay+CoreDataProperties.swift */,
+			);
+			path = Entitites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8FAFD22248E27E002BCB65 /* GooglePlayViewerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8FAFE82248E282002BCB65 /* Build configuration list for PBXNativeTarget "GooglePlayViewerApp" */;
+			buildPhases = (
+				3A8FAFCF2248E27E002BCB65 /* Sources */,
+				3A8FAFD02248E27E002BCB65 /* Frameworks */,
+				3A8FAFD12248E27E002BCB65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GooglePlayViewerApp;
+			productName = GooglePlayViewerApp;
+			productReference = 3A8FAFD32248E27E002BCB65 /* GooglePlayViewerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A8FAFCB2248E27E002BCB65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ali Akhtar";
+				TargetAttributes = {
+					3A8FAFD22248E27E002BCB65 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 3A8FAFCE2248E27E002BCB65 /* Build configuration list for PBXProject "GooglePlayViewerApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A8FAFCA2248E27E002BCB65;
+			productRefGroup = 3A8FAFD42248E27E002BCB65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8FAFD22248E27E002BCB65 /* GooglePlayViewerApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8FAFD12248E27E002BCB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8FAFE42248E282002BCB65 /* LaunchScreen.storyboard in Resources */,
+				3A289ECA2249140800C37966 /* googleplaystore.csv in Resources */,
+				3A8FAFE12248E282002BCB65 /* Assets.xcassets in Resources */,
+				3A8FAFDC2248E27E002BCB65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8FAFCF2248E27E002BCB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8FAFF12248ED54002BCB65 /* GooglePlay+CoreDataClass.swift in Sources */,
+				3A8FAFDF2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodeld in Sources */,
+				3A8FAFF22248ED54002BCB65 /* GooglePlay+CoreDataProperties.swift in Sources */,
+				3A8FAFD92248E27E002BCB65 /* ViewController.swift in Sources */,
+				3A8FAFD72248E27E002BCB65 /* AppDelegate.swift in Sources */,
+				3A289ECD2249379600C37966 /* GooglePlayListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A8FAFDA2248E27E002BCB65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8FAFDB2248E27E002BCB65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A8FAFE22248E282002BCB65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8FAFE32248E282002BCB65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A8FAFE62248E282002BCB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A8FAFE72248E282002BCB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8FAFE92248E282002BCB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlayViewerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ali.akhtar.GooglePlayViewerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A8FAFEA2248E282002BCB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GooglePlayViewerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ali.akhtar.GooglePlayViewerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8FAFCE2248E27E002BCB65 /* Build configuration list for PBXProject "GooglePlayViewerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8FAFE62248E282002BCB65 /* Debug */,
+				3A8FAFE72248E282002BCB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8FAFE82248E282002BCB65 /* Build configuration list for PBXNativeTarget "GooglePlayViewerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8FAFE92248E282002BCB65 /* Debug */,
+				3A8FAFEA2248E282002BCB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A8FAFDD2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A8FAFDE2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodel */,
+			);
+			currentVersion = 3A8FAFDE2248E27E002BCB65 /* GooglePlayViewerApp.xcdatamodel */;
+			path = GooglePlayViewerApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A8FAFCB2248E27E002BCB65 /* Project object */;
+}
