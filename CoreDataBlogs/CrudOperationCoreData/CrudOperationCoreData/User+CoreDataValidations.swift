@@ -23,20 +23,7 @@
 //        case InvalidUserFirstOrSecondName
 //    }
 //    
-//    override public func validateForInsert() throws {
-//        try super.validateForInsert()
-//        guard let firstName = firstName else  { throw NSError(domain: errorDomain, code: UserErrorType.InvalidUserFirstOrSecondName.rawValue, userInfo: [ NSLocalizedDescriptionKey : "The User First Or  Second name cannot be greater than 12 character." ] ) }
-//        
-//         guard let secondName = secondName else  { throw NSError(domain: errorDomain, code: UserErrorType.InvalidUserFirstOrSecondName.rawValue, userInfo: [ NSLocalizedDescriptionKey : "The User First Or  Second name cannot be greater than 12 character." ] ) }
-//        
-//        if (firstName.count > 12 || secondName.count > 12) {
-//            throw NSError(domain: errorDomain, code: UserErrorType.InvalidUserFirstOrSecondName.rawValue, userInfo: [ NSLocalizedDescriptionKey : "The User First Or  Second name cannot be greater than 12 character." ] )
-//        }
-//        
-//    }
-//    public override func validateForUpdate() throws {
-//        try super.validateForUpdate()
-//    }
+//   
 //    public override func validateValue(_ value: AutoreleasingUnsafeMutablePointer<AnyObject?>, forKey key: String) throws {
 //        
 //        if key == "secondName" {
@@ -64,5 +51,18 @@
 //    }
 //   
 // 
-//    
+//    override public func validateForInsert() throws {
+//        try super.validateForInsert()
+//        guard let firstName = firstName else  { throw NSError(domain: errorDomain, code: UserErrorType.InvalidUserFirstOrSecondName.rawValue, userInfo: [ NSLocalizedDescriptionKey : "The User First Or  Second name cannot be greater than 12 character." ] ) }
+//        
+//        guard let secondName = secondName else  { throw NSError(domain: errorDomain, code: UserErrorType.InvalidUserFirstOrSecondName.rawValue, userInfo: [ NSLocalizedDescriptionKey : "The User First Or  Second name cannot be greater than 12 character." ] ) }
+//        
+//        if (firstName.count > 12 || secondName.count > 12) {
+//            throw NSError(domain: errorDomain, code: UserErrorType.InvalidUserFirstOrSecondName.rawValue, userInfo: [ NSLocalizedDescriptionKey : "The User First Or  Second name cannot be greater than 12 character." ] )
+//        }
+//        
+//    }
+//    public override func validateForUpdate() throws {
+//        try super.validateForUpdate()
+//    }
 //}

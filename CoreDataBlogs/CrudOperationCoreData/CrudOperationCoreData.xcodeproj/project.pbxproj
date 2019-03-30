@@ -26,6 +26,7 @@
 		3A8FAFC92246264C002BCB65 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8FAFC82246264C002BCB65 /* Threading.swift */; };
 		3A99D669224D27A300CB7542 /* CRUDObjectOriented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D668224D27A300CB7542 /* CRUDObjectOriented.swift */; };
 		3A99D66C224DE79300CB7542 /* CrudOperationBetweenEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D66B224DE79300CB7542 /* CrudOperationBetweenEntities.swift */; };
+		3A99D66F224FB56900CB7542 /* ConcurrencyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D66E224FB56900CB7542 /* ConcurrencyRule.swift */; };
 		3AE23F2722390C48004CB295 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE23F2522390C48004CB295 /* User+CoreDataClass.swift */; };
 		3AE23F2822390C48004CB295 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE23F2622390C48004CB295 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		3A8FAFC82246264C002BCB65 /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
 		3A99D668224D27A300CB7542 /* CRUDObjectOriented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDObjectOriented.swift; sourceTree = "<group>"; };
 		3A99D66B224DE79300CB7542 /* CrudOperationBetweenEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudOperationBetweenEntities.swift; sourceTree = "<group>"; };
+		3A99D66E224FB56900CB7542 /* ConcurrencyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyRule.swift; sourceTree = "<group>"; };
 		3AE23F2522390C48004CB295 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3AE23F2622390C48004CB295 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,11 +119,12 @@
 		3A872851222C141F002B461A /* CrudOperationCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				3A99D66D224FB55100CB7542 /* Concurrency (Part 11) */,
 				3A99D66A224DE76600CB7542 /* CRUD Operation Relationship (Part 6 ) */,
 				3A99D667224D278100CB7542 /* CRUD Object Oriented (par 4) */,
 				3A289F02224D11E800C37966 /* CRUD (Part 3) */,
 				3A8FAFC722462638002BCB65 /* ThreadingCode */,
-				3A8FAFC42245053D002BCB65 /* Faulting (Part 11) */,
+				3A8FAFC42245053D002BCB65 /* Faulting (Part 20) */,
 				3A8FAFC022424DFC002BCB65 /* NSFetchRequest (Part 9 and Part 10) */,
 				3A7766452240E2EC00AF1D46 /* Validation (Part 8) */,
 				3A776641223E692A00AF1D46 /* DeletionRule (Part7) */,
@@ -152,12 +155,12 @@
 			path = "NSFetchRequest (Part 9 and Part 10)";
 			sourceTree = "<group>";
 		};
-		3A8FAFC42245053D002BCB65 /* Faulting (Part 11) */ = {
+		3A8FAFC42245053D002BCB65 /* Faulting (Part 20) */ = {
 			isa = PBXGroup;
 			children = (
 				3A8FAFC52245054D002BCB65 /* Faulting.swift */,
 			);
-			path = "Faulting (Part 11)";
+			path = "Faulting (Part 20)";
 			sourceTree = "<group>";
 		};
 		3A8FAFC722462638002BCB65 /* ThreadingCode */ = {
@@ -182,6 +185,14 @@
 				3A99D66B224DE79300CB7542 /* CrudOperationBetweenEntities.swift */,
 			);
 			path = "CRUD Operation Relationship (Part 6 )";
+			sourceTree = "<group>";
+		};
+		3A99D66D224FB55100CB7542 /* Concurrency (Part 11) */ = {
+			isa = PBXGroup;
+			children = (
+				3A99D66E224FB56900CB7542 /* ConcurrencyRule.swift */,
+			);
+			path = "Concurrency (Part 11)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A8FAFBF22422B41002BCB65 /* User+CoreDataValidations.swift in Sources */,
+				3A99D66F224FB56900CB7542 /* ConcurrencyRule.swift in Sources */,
 				3A99D66C224DE79300CB7542 /* CrudOperationBetweenEntities.swift in Sources */,
 				3A8FAFC62245054D002BCB65 /* Faulting.swift in Sources */,
 				3A872855222C141F002B461A /* ViewController.swift in Sources */,

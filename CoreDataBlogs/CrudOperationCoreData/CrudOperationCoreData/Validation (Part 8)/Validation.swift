@@ -94,13 +94,11 @@ struct Validation {
     }
     
     func addThreeTodoTaks() {
-        
         //1) get reference to app delegate singleton instance
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
         //2) We need context from container Entity needs context to create objects
         let managedObjectContext = appDelegate.persistentContainer.viewContext
-        
         
         //3) Created a first todo  object
         let todoObjectOne = Task(context: managedObjectContext)
