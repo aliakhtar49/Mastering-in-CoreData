@@ -17,9 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
   
-    @IBAction func exportButtonTapped(_ sender: UIBarButtonItem) {
-         loadGooglePlayStoreAppsFromCSVWithConcurrency()
-    }
+  
     func logsGoogle(on context: NSManagedObjectContext, with text: String){
         
         context.performAndWait {
@@ -68,18 +66,20 @@ class ViewController: UIViewController {
             print("Main Thread Block Time \(CFAbsoluteTimeGetCurrent() - startTime)")
         }
     }
-    func loadGooglePlayStoreAppsFromCSV() {
+    @IBAction func exportButtonTapped(_ sender: UIBarButtonItem) {
+        loadGooglePlayStoreAppsFromCSVWithoutConcurrency()
+    }
+    func loadGooglePlayStoreAppsFromCSVWithoutConcurrency() {
+         let startTime = CFAbsoluteTimeGetCurrent()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let privateQueueContext = appDelegate.persistentContainer.newBackgroundContext()
-      
-        
-        privateQueueContext.performAndWait{
+        let mainQueueContext = appDelegate.persistentContainer.viewContext
+
             var data = self.readDataFromCSV(fileName: "googleplaystore", fileType: "csv")
             data = self.cleanRows(file: data ?? "d")
             let csvRows = self.csv(data: data ?? "d")
             
             for i in 1 ..< (csvRows.count - 1 ) {
-                let googlePlay = GooglePlay(context: privateQueueContext)
+                let googlePlay = GooglePlay(context: mainQueueContext)
                 googlePlay.app = csvRows[i][0]
                 googlePlay.category = csvRows[i][1]
                 googlePlay.rating = csvRows[i][2]
@@ -91,19 +91,15 @@ class ViewController: UIViewController {
                 googlePlay.genres = csvRows[i][8]
                 googlePlay.currentVer = csvRows[i][9]
                 googlePlay.androidVer = csvRows[i][10]
-                
                 //Note:Juts to increase time (date formatter should not contain in this way huge performance task)
-                let end = "2017-11-12"
-                let dateFormat = "yyyy-MM-dd"
+                let end = "2017-11-12"; let dateFormat = "yyyy-MM-dd"
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = dateFormat
                 let endDate = dateFormatter.date(from: end)
                 googlePlay.lastUpdated = endDate! as NSDate
             }
-            let startTime = CFAbsoluteTimeGetCurrent()
-            try! privateQueueContext.save()
+            try! mainQueueContext.save()
             print("Main Thread Block Time \(CFAbsoluteTimeGetCurrent() - startTime)")
-        }
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
