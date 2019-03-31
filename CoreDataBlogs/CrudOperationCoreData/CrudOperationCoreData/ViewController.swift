@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Threading.init().addUser()
-    Threading.init().parentChildContext()
-        // Do any additional setup after loading the view, typically from a nib.
+    ConcurrencyNotification.init().addUser()
+        ConcurrencyNotification.init().notificationThreadingStrategy()
+        
     }
    
     

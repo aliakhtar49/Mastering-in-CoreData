@@ -27,6 +27,7 @@
 		3A99D669224D27A300CB7542 /* CRUDObjectOriented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D668224D27A300CB7542 /* CRUDObjectOriented.swift */; };
 		3A99D66C224DE79300CB7542 /* CrudOperationBetweenEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D66B224DE79300CB7542 /* CrudOperationBetweenEntities.swift */; };
 		3A99D66F224FB56900CB7542 /* ConcurrencyRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D66E224FB56900CB7542 /* ConcurrencyRule.swift */; };
+		3A99D6732250A88B00CB7542 /* ConcurrencyNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A99D6722250A88B00CB7542 /* ConcurrencyNotification.swift */; };
 		3AE23F2722390C48004CB295 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE23F2522390C48004CB295 /* User+CoreDataClass.swift */; };
 		3AE23F2822390C48004CB295 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE23F2622390C48004CB295 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		3A99D668224D27A300CB7542 /* CRUDObjectOriented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUDObjectOriented.swift; sourceTree = "<group>"; };
 		3A99D66B224DE79300CB7542 /* CrudOperationBetweenEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrudOperationBetweenEntities.swift; sourceTree = "<group>"; };
 		3A99D66E224FB56900CB7542 /* ConcurrencyRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyRule.swift; sourceTree = "<group>"; };
+		3A99D6722250A88B00CB7542 /* ConcurrencyNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyNotification.swift; sourceTree = "<group>"; };
 		3AE23F2522390C48004CB295 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3AE23F2622390C48004CB295 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,8 @@
 		3A872851222C141F002B461A /* CrudOperationCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				3A99D6712250A86C00CB7542 /* Concurrency Notification (part 13) */,
+				3A99D670224FE18C00CB7542 /* Concurrency Problem (Part 12) */,
 				3A99D66D224FB55100CB7542 /* Concurrency (Part 11) */,
 				3A99D66A224DE76600CB7542 /* CRUD Operation Relationship (Part 6 ) */,
 				3A99D667224D278100CB7542 /* CRUD Object Oriented (par 4) */,
@@ -193,6 +197,21 @@
 				3A99D66E224FB56900CB7542 /* ConcurrencyRule.swift */,
 			);
 			path = "Concurrency (Part 11)";
+			sourceTree = "<group>";
+		};
+		3A99D670224FE18C00CB7542 /* Concurrency Problem (Part 12) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Concurrency Problem (Part 12)";
+			sourceTree = "<group>";
+		};
+		3A99D6712250A86C00CB7542 /* Concurrency Notification (part 13) */ = {
+			isa = PBXGroup;
+			children = (
+				3A99D6722250A88B00CB7542 /* ConcurrencyNotification.swift */,
+			);
+			path = "Concurrency Notification (part 13)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +295,7 @@
 				3A872853222C141F002B461A /* AppDelegate.swift in Sources */,
 				3A99D669224D27A300CB7542 /* CRUDObjectOriented.swift in Sources */,
 				3A699431223532DD00B59640 /* Task+CoreDataProperties.swift in Sources */,
+				3A99D6732250A88B00CB7542 /* ConcurrencyNotification.swift in Sources */,
 				3A289F04224D120D00C37966 /* CrudOperationWIthoutObjectOriented.swift in Sources */,
 				3A699430223532DD00B59640 /* Task+CoreDataClass.swift in Sources */,
 				3A699433223532DD00B59640 /* Passport+CoreDataProperties.swift in Sources */,
