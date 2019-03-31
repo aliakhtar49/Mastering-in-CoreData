@@ -44,3 +44,32 @@ https://medium.com/@aliakhtar_16369/mastering-in-coredata-part-14-multithreading
 
 15 (Multithreading Concurrency Strategy Parent — Child Use Case 1) </br>
 https://medium.com/@aliakhtar_16369/mastering-in-coredata-part-15-multithreading-concurrency-strategy-parent-child-use-case-1-12a180a6fc34
+
+
+Part 16 Multithreading Concurrency Strategy Parent - Child Use Case 2 
+(In Progress)
+
+Part 17 Multithreading Concurrency Strategy Context UndoManager 
+(InProgress)
+Part 18 Simple Persistent Layer Architecture Using Core Data
+(In Progress)
+Part 18 Advanced Persistent Layer Architecture Using Core Data
+(In Progress)
+Part 19 Advanced Queries
+(In Progress)
+Part 20 Fault in Core Data
+(In Progress)
+Part 21 Multiple Persistent Stores
+(In Progress)
+Part 22 Multiple Persistent Store Coordinator
+(In Progress)
+Part 23 sharing Core Data between App and Widget 
+(In Progress)
+Part 24 Migration in Core Data
+(In Progress)
+Part 25 Many To Many relationship 
+(In Progress)
+Part 26 Core Data Encryption 
+(In Progress)
+Part 27 Pre Bundle Data In Core Data
+(In Progress)
