@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //Threading.init().addUser()
-    ConcurrencyNotification.init().addUser()
-        ConcurrencyNotification.init().notificationThreadingStrategy()
+    ParentChildConcurrency.init().addFourUserToDemonstrateParentAndChild()
+    ParentChildConcurrency.init().parentChildContext()
+       
         
     }
    
