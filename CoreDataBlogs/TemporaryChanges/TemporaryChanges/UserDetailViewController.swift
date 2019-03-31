@@ -18,10 +18,10 @@ class UserDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = true
-        let newBackButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back(sender:)))
-        
-        self.navigationItem.leftBarButtonItem = newBackButton
+//        self.navigationItem.hidesBackButton = true
+//        let newBackButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(back(sender:)))
+//        
+//        self.navigationItem.leftBarButtonItem = newBackButton
         
         
         lastNameTextField.delegate = self
@@ -30,7 +30,7 @@ class UserDetailViewController: UIViewController {
         lastNameTextField.text = user?.lastName
         firstNameTextField.text = user?.firstname
     }
-    func fetchUserDetailsFromDataBase() {
+    func fetchUserDetailsFromDataBaseWithUndoManager() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managedObjectContext = appDelegate.persistentContainer.viewContext
         managedObjectContext.undoManager = UndoManager()
@@ -43,8 +43,32 @@ class UserDetailViewController: UIViewController {
         
         user = users[0]
     }
+    func fetchUserDetailsFromDataBase() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let managedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        
+        let fetchRequest = NSFetchRequest<User>(entityName: "User")
+        
+        let users = try! managedObjectContext.fetch(fetchRequest)
+        
+        user = users[0]
+    }
     
-    
+    func fetchUserDetailsFromDataBaseUsingChildContext() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        let mainQueueManagedObjectContext = appDelegate.persistentContainer.viewContext
+        childContext.parent = mainQueueManagedObjectContext
+        
+        childContext.performAndWait {
+            let fetchRequest = NSFetchRequest<User>(entityName: "User")
+            
+            let users = try! childContext.fetch(fetchRequest)
+            
+            user = users[0]
+        }
+        
+    }
     @objc func back(sender: UIBarButtonItem) {
       
         self.navigationController?.popViewController(animated: true)
@@ -58,20 +82,7 @@ class UserDetailViewController: UIViewController {
  
     
  
-    func fetchUserDetailsFromDataBaseUsingChildContext() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        let mainQueueManagedObjectContext = appDelegate.persistentContainer.viewContext
-        childContext.parent = mainQueueManagedObjectContext
-        
-        childContext.performAndWait {
-            let fetchRequest = NSFetchRequest<User>(entityName: "User")
-            
-            let users = try! childContext.fetch(fetchRequest)
-            
-            user = users[0]
-        }
-       
-    }
+    
   
     @IBAction func saveButtonTapped(_ sender: UIButton) {
       saveButtonActionWithChildContext()

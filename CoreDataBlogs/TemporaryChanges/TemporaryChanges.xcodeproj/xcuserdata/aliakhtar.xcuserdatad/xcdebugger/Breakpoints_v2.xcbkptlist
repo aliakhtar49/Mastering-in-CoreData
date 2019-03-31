@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TemporaryChanges/UndoManager/UndoManager.swift"
-            timestampString = "575459802.1983891"
+            timestampString = "575726427.071171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TemporaryChanges/UserDetailViewController.swift"
-            timestampString = "575459802.1989861"
+            timestampString = "575743301.0314389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "UserDetailViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TemporaryChanges/UserDetailViewController.swift"
-            timestampString = "575459802.199062"
+            timestampString = "575743301.032061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "back(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,7 +58,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TemporaryChanges/UndoManager/UndoManager.swift"
-            timestampString = "575459802.199116"
+            timestampString = "575726427.0715539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -74,28 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TemporaryChanges/UndoManager/UndoManager.swift"
-            timestampString = "575459802.1995"
+            timestampString = "575726427.07178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
             landmarkName = "logsUserFirstAndUserReference(on:with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TemporaryChanges/UndoManager/UndoManager.swift"
-            timestampString = "575459802.19998"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "simpleContextRollback()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

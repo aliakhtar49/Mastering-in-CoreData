@@ -16,14 +16,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var userLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        UndoManagerCoredata.init().simpleContextRollback()
-        //initializeUser()
+        //UndoManagerCoredata.init().simpleContextRollback()
+        initializeUser()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        fetchUserDetailsFromDataBase()
-//        setUpUI()
+        fetchUserDetailsFromDataBase()
+        setUpUI()
     }
     
     func initializeUser() {
