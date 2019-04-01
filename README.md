@@ -47,10 +47,12 @@ https://medium.com/@aliakhtar_16369/mastering-in-coredata-part-15-multithreading
 
 
 Part 16 Multithreading Concurrency Strategy Parent - Child Use Case 2 
-(In Progress)
+https://medium.com/@aliakhtar_16369/mastering-in-coredata-part-16-multithreading-concurrency-strategy-parent-child-use-case-2-bf7dd7e5245a
 
 Part 17 Multithreading Concurrency Strategy Context UndoManager 
-(InProgress)
+https://medium.com/@aliakhtar_16369/mastering-in-coredata-part-17-multithreading-concurrency-strategy-context-undomanager-d4a52138978a
+
+
 Part 18 Simple Persistent Layer Architecture Using Core Data
 (In Progress)
 Part 18 Advanced Persistent Layer Architecture Using Core Data
