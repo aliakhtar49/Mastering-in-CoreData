@@ -1,5 +1,8 @@
 # Mastering-in-CoreData
 
+Part 0 (Mastering-in-CoreData) </br>
+https://medium.com/@aliakhtar_16369/mastering-in-core-data-part-0-5a529c6c5a93
+
 Part 1 (Introduction) </br>
  https://medium.com/@aliakhtar_16369/mastering-in-coredata-part-1-introduction-7c5d667bfabd
 
